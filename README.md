@@ -31,7 +31,7 @@ The final prediction combines XGBoost with the scaled additive baseline:
 $$
 \hat{y} =
 \begin{cases}
-\mathrm{XGBoost}(x_1, x_2, x_1 \odot x_2), & \text{top-200 variable genes} \\
+\mathrm{XGBoost}(x_1, x_2, x_1 x_2), & \text{top-200 variable genes} \\
 s_{\mathrm{global}}(x_1+x_2), & \text{remaining 800 genes}
 \end{cases}
 $$
